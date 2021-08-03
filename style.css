@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 h1, h2{
     font-family: 'Inter', 'Sans Serif';
-    font-weight: 900;
     color: hsl(0, 0%, 100%);
 }
 
@@ -16,9 +15,8 @@ body b{
     color: hsl(278, 48%, 43%); 
 }
 
-body p{
+body p, ul{
     font-family: 'Lexend Deca';
-    font-weight: 400;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -34,8 +32,8 @@ body ul{
 }
 
 .list-item{
-    margin: 20px;
-    
+    margin: 0px 50px 0px 0px;
+    text-transform: uppercase;
 }
 
 .container{
@@ -80,17 +78,28 @@ body ul{
 @media only screen and (max-width: 375px) {
     .main-card{
         flex-direction: column;
-        border: 20px;
+        height: 80vh;
+        margin: 15px;
     }
 
     .main-card-text{
         text-align: center;
         flex-direction: column; 
+        order: 1;
     }
 
     body ul{
         flex-direction: column;     
         text-align: center;
+    }
+
+    .list-item{
+        margin: 0px;
+    }
+
+    .main-card-image img{
+        border-radius: 10px 10px 0px 0px;
+        order: 0;
     }
 }
 
